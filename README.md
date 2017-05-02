@@ -1,4 +1,4 @@
-# vue-chart
+# Experiments with Templates and Navigation
 
 > A Vue.js project
 
