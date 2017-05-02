@@ -1,6 +1,12 @@
 @import 'globalvariables';
 @import 'globalmixins';
 
+@import './scss-files/footer';
+@import './scss-files/form';
+@import './scss-files/header';
+@import './scss-files/project';
+
+
 /* A Basic Color Palette - Flat Design
 -----------------------------
 Blue #324D5C Green #46B29D Yellow #F0CA4D Orange #E37B40 Red #DE5B49
@@ -11,49 +17,70 @@ Blue #324D5C Green #46B29D Yellow #F0CA4D Orange #E37B40 Red #DE5B49
 -----------------------------
 */
 
-#app {
-    text-align: center;
-}
 
-// ul {
-//     list-style-type: none;
-//     padding: 0;
+// 
+// ! BEHÅLL DETTA: 
+// #app {
+//     text-align: center;
+//     font-family: $font-mono;
 // }
 
-// li {
-//     display: inline-block;
-//     margin: 0 10px;
+// .headlines {
+// 	font-family: $font-headlines;
+// 	text-transform: lowercase;
+// 	font-weight: 700;
 // }
 
 // h1 {
-//     font-size: 4.5rem;
-//     font-weight: 300;
-//     line-height: 1.1;
-//     font: $font-1;
+// 	@extend .headlines;
 // }
 
 
-// h2 {
-// 	@extend h1;
-//     font-size: 3.6rem;
-//     color: $red;
-// }
 
-// h3 {
-// 	@extend h1;
-//     font-size: 1.85rem;
-// }
+#app {
+    text-align: center;
+    // background: #E7E7D0; 
+}
 
-// h4 {
-//     @extend h1;
-//     font-size: 1.0rem;
-// }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-// a {
-//     color: $orange;
-// }
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
 
-// .alert {
-//     background: #41B883;
-//     color: #35495E;
-// }
+h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    font: $font-1;
+}
+
+
+h2 {
+	@extend h1;
+    font-size: 3.6rem;
+    color: $red;
+}
+
+h3 {
+	@extend h1;
+    font-size: 1.85rem;
+}
+
+h4 {
+    @extend h1;
+    font-size: 1.0rem;
+}
+
+a {
+    color: $orange;
+}
+
+.alert {
+    background: #41B883;
+    color: #35495E;
+}
